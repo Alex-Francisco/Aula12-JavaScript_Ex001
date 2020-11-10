@@ -3,24 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
-body {
-    background: #2286b0;
-    font: normal 15pt 'Lato';
+body, html {
+    height: 100%;;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000;
 }
 
-section {
-    background: #fff;
-    border-radius: 15px;
-    padding: 20px;
-    width: 500px;
-    margin: auto;
+#msg {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
 }
 
-header, footer {
-    color: #fff;
-    text-align: center;
-}
-
-footer {
-    font-style: italic;
+.txt-banner {
+    font-size: 1.5em;
+    margin-left: 2px;
 }
