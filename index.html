@@ -30,6 +30,17 @@
 				<p class="txt-banner text-justify">
 				    O exercício pede que seja mostrado a hora atual, sendo que devem ser exibidas imagens de acordo com o horário (manhã, tarde ou noite), além disso o bom dia, boa tarde ou boa noite, deve ocorrer de forma automática.
                 </p>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect0">Simular com horário da</label>
+                    </div>
+                    <select class="custom-select" id="periodo" onchange="carregar()">
+                        <option selected value="selecione">Atual</option>
+                        <option value="manha">Manhã<Brasil</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
 			</div>
 		</div>
 	</div>	

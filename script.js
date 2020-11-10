@@ -4,18 +4,19 @@ function carregar() {
     var data = new Date()
     var hora = data.getHours()
     var minutos = data.getMinutes()
-    periodo = ""
+    var simular = document.getElementById('periodo').value
+    var periodo = ""
 
     if (minutos >= 0 && minutos < 10) {
         minutos = `0${minutos}`
     } else {
         minutos = minutos
-    }
+    } 
 
-    if (hora >= 0 && hora < 12) {
+    if (hora >= 0 && hora < 12 || simular == "manha")  {
         periodo  = "Bom dia"
         img.background = "url('manha.jpg') center center"
-    } else if (hora >= 12 && hora < 18) {
+    } else if (hora >= 12 && hora <= 18 || simular == "tarde") {
         periodo  = "Boa tarde"
         img.background = "url('tarde.jpg') center center" 
     } else {
@@ -23,5 +24,18 @@ function carregar() {
         img.background = "url('noite.jpg') center center"
     }
 
+    if (simular == "noite") {
+        hora = 22
+        periodo  = "Boa noite"
+        img.background = "url('noite.jpg') center center"
+    } else if (simular == "tarde") {
+        hora = 15
+    } else if (simular == "manha") {
+        hora = 9
+    }
+
     msg.innerHTML = `${periodo}, agora são ${hora}:${minutos}`
+   
 }
+
+   
