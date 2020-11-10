@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+body {
+    background: #2286b0;
+    font: normal 15pt 'Lato';
+}
+
+section {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+}
+
+header, footer {
+    color: #fff;
+    text-align: center;
+}
+
+footer {
+    font-style: italic;
+}
