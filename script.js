@@ -4,6 +4,7 @@ function carregar() {
     var data = new Date()
     var hora = data.getHours()
     var minutos = data.getMinutes()
+    var segundos = data.getSeconds()
     var simular = document.getElementById('periodo').value
     var periodo = ""
 
@@ -11,7 +12,13 @@ function carregar() {
         minutos = `0${minutos}`
     } else {
         minutos = minutos
-    } 
+    }
+    
+    if (segundos >= 0 && segundos < 10) {
+        segundos = `0${segundos}`
+    } else {
+        segundos = segundos
+    }
 
     if (hora >= 0 && hora < 12 || simular == "manha")  {
         periodo  = "Bom dia"
@@ -34,8 +41,10 @@ function carregar() {
         hora = 9
     }
 
-    msg.innerHTML = `${periodo}, agora são ${hora}:${minutos}`
+    msg.innerHTML = `${periodo}, agora são ${hora}:${minutos}:${segundos}`
    
 }
+
+window.setInterval('carregar()', 1000)
 
    
