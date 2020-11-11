@@ -37,8 +37,10 @@ function carregar() {
         img.background = "url('noite.jpg') center center"
     } else if (simular == "tarde") {
         hora = 15
+        img.background = "url('tarde.jpg') center center" 
     } else if (simular == "manha") {
         hora = 9
+        img.background = "url('manha.jpg') center center"
     }
 
     msg.innerHTML = `${periodo}, agora são ${hora}:${minutos}:${segundos}`
